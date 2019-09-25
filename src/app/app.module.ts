@@ -1,16 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser'; 
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { PhotosModule } from './photos/photos.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, // Photo será acessível ao App Component
+  
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PhotosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// Primeiro Módulo a ser carregado pela aplicação / Root module
