@@ -6,8 +6,7 @@ import { PhotosModule } from './photos/photos.module';
 
 @NgModule({
   declarations: [
-    AppComponent, // Photo será acessível ao App Component
-  
+    AppComponent // Photo será acessível ao App Component
   ],
   imports: [
     BrowserModule,
